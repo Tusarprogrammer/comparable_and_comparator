@@ -1,0 +1,32 @@
+Comparable is used for single element based sorting
+
+compareTo method is used here
+
+public int compareTo(Movie m)
+    {
+       //return this.year - m.year;
+    	if(this.year==m.getYear()) {
+    		return 0;
+    	} else if(this.year > m.getYear()) {
+    		return 1;
+    	}else {
+    		return -1;
+    	}
+    	
+    }
+
+Collections.sort(movieList);
+
+// Comparable is already implemented for String,Integer etc
+==============================================================
+
+for multiple element based sorting comparator can be used
+
+@Override
+	public int compare(Movie m1, Movie m2) {
+		return m1.getName().compareToIgnoreCase(m2.getName());
+	}
+	
+	
+Collections.sort(movieList,new NameComaparator());
+
