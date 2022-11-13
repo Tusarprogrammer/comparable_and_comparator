@@ -22,6 +22,9 @@ public class Movie implements Comparable<Movie> {
 	
 	
 	
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Movie [rating=" + rating + ", name=" + name + ", year=" + year + "]";
